@@ -84,11 +84,11 @@ class SearchFragment : Fragment() {
         categoriesAdapter.onItemClick = { category ->
             var position = 0
             when (category.name) {
-                resources.getString(R.string.g_chair) -> position = 1
-                resources.getString(R.string.g_cupboard) -> position = 2
-                resources.getString(R.string.g_table) -> position = 3
-                resources.getString(R.string.g_accessory) -> position = 4
-                resources.getString(R.string.g_furniture) -> position = 5
+                "PlantCat1" -> position = 1
+                "PlantCat2" -> position = 2
+                "PlantCat3" -> position = 3
+                "PlantCat4" -> position = 4
+                "PlantCat5" -> position = 5
             }
 
             val bundle = Bundle()
