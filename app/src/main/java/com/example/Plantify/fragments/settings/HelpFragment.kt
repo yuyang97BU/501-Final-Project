@@ -40,7 +40,7 @@ class HelpFragment : Fragment(R.layout.fragment_help) {
     private fun openEmailApp() {
         Intent(Intent.ACTION_SEND).apply {
             type = "text/plain"
-            putExtra(Intent.EXTRA_EMAIL, arrayOf("kleine@gmail.com")) // recipients
+            putExtra(Intent.EXTRA_EMAIL, arrayOf("yuyang@bu.edu")) // recipients
             putExtra(Intent.EXTRA_SUBJECT, "")
             putExtra(Intent.EXTRA_TEXT, "")
             putExtra(Intent.EXTRA_STREAM, Uri.parse("content://path/to/email/attachment"))
